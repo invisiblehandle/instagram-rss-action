@@ -25,7 +25,7 @@ To use this action, create a new workflow in `.github/workflows` and modify it a
 name: RSS
 on:
   schedule:
-    - cron: "41 15 * * *"
+    - cron: "45 15 * * *"
   push:
 
 jobs:
