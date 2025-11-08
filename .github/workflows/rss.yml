@@ -1,7 +1,7 @@
 name: RSS
 on:
   schedule:
-    - cron: "41 15 * * *"
+    - cron: "45 15 * * *"
   push:
 
 jobs:
