@@ -25,7 +25,7 @@ To use this action, create a new workflow in `.github/workflows` and modify it a
 name: RSS
 on:
   schedule:
-    - cron: "0 17 * * *"
+    - cron: "41 15 * * *"
   push:
 
 jobs:
@@ -37,10 +37,10 @@ jobs:
         uses: actions/checkout@v3
       - name: RSS
         id: rss
-        uses: katydecorah/instagram-rss-action@v0.3.0
+        uses: invisiblehandle/instagram-rss-action@v0.3.0
         with:
-          yourInstagram: instagram_handle
-          listOfInstagrams: nytcooking,sohlae,swissmiss,soulfirefarm
+          yourInstagram: xrebainofdunland
+          listOfInstagrams: kajalaggarwalofficial
       - name: Commit files
         if: ${{ success() && steps.rss.outputs.RSS_STATUS == 'success' }}
         run: |
